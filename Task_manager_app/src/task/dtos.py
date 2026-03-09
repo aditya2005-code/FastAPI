@@ -7,3 +7,12 @@ class TaskSchema(BaseModel):
 
     class Config:
         from_attributes = True
+
+class TaskResponseSchema(BaseModel):
+    id:int
+    title:str
+    description:str
+    is_completed:bool=False
+
+    class Config:
+        from_attributes = True
